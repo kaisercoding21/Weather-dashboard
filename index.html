@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Weather Station</title>
+  </head>
+  <body>
+    <header class="nav-wrapper center-align teal accent-2">
+      <h1 class="">Weather Station</h1>
+    </header>
+
+    <div class="row">
+      <form class="col s4" id="searchForm">
+        <div class="row align center">
+          <div class="input-field col s4">
+            <input placeholder="Enter City Name" id="city" type="text" />
+            <button
+              class="btn waves-effect waves-light"
+              type="submit"
+              name="action"
+            >
+              Search
+              <i class="material-icons right">search</i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="section"></div>
+    <div class="col s3 m6 l12 align left chip">
+      <div class="chip-text">
+        this is where the city list will go I'm thinking autogenerate buttons
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m4 offset-l2" id="main">
+        <div class="card grey darken-1 hoverable">
+          <div class="card-content white-text">
+            <span class="card-title" id="title"
+              >City Name <i class="material-icons right">wb_sunny</i></span
+            >
+            <p>
+              I am a very simple card. I am good at containing small bits of
+              information. I am convenient because I require little markup to
+              use effectively.
+            </p>
+            <p>this is a</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s2 offset-l1">
+        <div class="card-panel teal hoverable" id="1">
+          <span class="white-text"
+            >I am a very simple card. I am good at containing small bits of
+            information.
+          </span>
+        </div>
+      </div>
+
+      <div class="col s2">
+        <div class="card-panel teal hoverable" id="2">
+          <span class="white-text"
+            >I am a very simple card. I am good at containing small bits of
+            information.
+          </span>
+        </div>
+      </div>
+
+      <div class="col s2" id="3">
+        <div class="card-panel teal hoverable">
+          <span class="white-text"
+            >I am a very simple card. I am good at containing small bits of
+            information. I am convenient because I require little markup to use
+            effectively.
+          </span>
+        </div>
+      </div>
+
+      <div class="col s2" id="4">
+        <div class="card-panel teal hoverable">
+          <span class="white-text"
+            >I am a very simple card. I am good at containing small bits of
+            information.
+          </span>
+        </div>
+      </div>
+
+      <div class="col s2" id="5">
+        <div class="card-panel teal hoverable">
+          <span class="white-text"
+            >I am a very simple card. I am good at containing small bits of
+            information.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
