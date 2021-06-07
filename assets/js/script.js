@@ -18,6 +18,7 @@ userCity = "";
 var getUserInput = function (event) {
   event.preventDefault();
   userCity = userCityInput.value.trim().toLowerCase();
+
   if (userCity) {
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -45,21 +46,25 @@ var getUserInput = function (event) {
       });
     });
 
-    timeout();
+    userCityInput.textContent = userCity;
+    console.log(userCity);
+    userInput.reset();
+
+    // timeout();
   }
   // displayCurrentWeather();
 };
 
+userInput.addEventListener("submit", getUserInput);
+// var timeout = function () {
+//   setTimeout(function () {
+//     console.log(userCity);
+//     console.log(currentWeather);
+//     console.log(futureCast);
+//     console.log(futureCast.daily[1].uvi);
+//   }, 1000);
+// };
 // var displayCurrentWeather = function () {
 // };
 
-userInput.addEventListener("submit", getUserInput);
-var timeout = function () {
-  setTimeout(function () {
-    console.log(userCity);
-    console.log(currentWeather);
-    console.log(futureCast);
-    console.log(futureCast.daily[1].uvi);
-  }, 1000);
-};
 // // callbacks
